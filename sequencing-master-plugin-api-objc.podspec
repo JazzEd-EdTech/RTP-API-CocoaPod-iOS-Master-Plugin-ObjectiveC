@@ -15,12 +15,11 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Sequencing" => "gittaca@sequencing.com" }
   s.source       = { 
-  :git => "https://github.com/SequencingDOTcom/CocoaPod-iOS-Master-Plugin-ObjectiveC", 
+  :git => "https://github.com/SequencingDOTcom/CocoaPod-iOS-Master-Plugin-ObjectiveC.git", 
   :tag => "1.0.0" 
   }
   s.platform     = :ios, '9.0'
-  s.source_files = 'Pod', 'Pod/*.*'  
-  s.resources = ['Resources/*.*']
+  # s.source_files = 'Pod', 'Pod/*.*'  
   s.requires_arc = true
   
   s.dependency "sequencing-oauth-api-objc", "~> 1.0.3"
