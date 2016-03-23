@@ -220,6 +220,7 @@ OAuth CocoaPod Plugin integration
 		```
 	
 	* in method ```tokenIsRefreshed``` you'll receive updated token with the same object model.
+	
 		DO NOT OVERRIDE REFRESH_TOKEN PROPERTY for TOKEN object - it comes as null after refresh token request
 	
 	* for your extra needs you can always get access directly to the up-to-day token object which is stored in ```SQAuthResult``` class via ```token``` property
