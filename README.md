@@ -280,7 +280,7 @@ File Selector CocoaPod Plugin integration
 
 	* set up some button for getting/viewing files for logged in user, and specify delegate method for this button
 	
-	* specify UI segue name constant
+	* specify segue ID constant
 		```
 		static NSString *const FILES_CONTROLLER_SEGUE_ID = @"GET_FILES";
 		```	
@@ -300,8 +300,43 @@ File Selector CocoaPod Plugin integration
 		```
 		[self performSegueWithIdentifier:FILES_CONTROLLER_SEGUE_ID sender:@0];
 		```
+	
+	* when user selects any file and clics on "Continue" button in UI - ```handleFileSelected:``` method from ```SQFileSelectorProtocol``` protocol then.
+		Selected file will be passed on as a parameter. In this method you can handle selected file
+	
+	* each file is a NSDictionary object with following keys and values format:
+	
+		key name | type | description
+		------------- | ------------- | ------------- 
+		DateAdded | String | date file was added
+		Ext | String | file extension
+		FileCategory | String | file category: Community, Uploaded, FromApps, Altruist
+		FileSubType | String | file subtype
+		FileType | String | file type
+		FriendlyDesc1 | String | person name for sample files
+		FriendlyDesc2 | String | person description for sample files
+		Id | String | file ID
+		Name | String | file name
+		Population | String | 
+		Sex | String |	the sex
 		
-		note: this code will work only if you already set up the reference to TabbarFileSelector.storyboard in your storyboard
+
+* Examples 
+
+	* example of ```My Files```
+
+		![my files](https://github.com/SequencingDOTcom/CocoaPod-iOS-File-Selector-ObjectiveC/blob/master/Screenshots/fileSelector_myFiles.png)
+
+
+	* example of ```Sample Files```
+
+		![sample files](https://github.com/SequencingDOTcom/CocoaPod-iOS-File-Selector-ObjectiveC/blob/master/Screenshots/fileSelector_sampleFiles.png)
+
+	
+	* example of selected file
+
+		![selected file](https://github.com/SequencingDOTcom/CocoaPod-iOS-File-Selector-ObjectiveC/blob/master/Screenshots/fileSelector_selectedFile.png)
+
 		
 	* example of ```Select File``` button
 		```
@@ -349,23 +384,15 @@ File Selector CocoaPod Plugin integration
 			}];
 		}
 		```
-		
-	* selected file will already appear as a parameter in ```handleFileSelected:``` method from ```SQFileSelectorProtocol``` protocol. In this method you can handle selected file
 	
-	* each file is a NSDictionary object with following keys and values:
+	* example of ```handleFileSelected``` method
+
 		```
-		DateAdded:     "string value"
-		Ext:           "string value"
-		FileCategory:  "string value"
-		FileSubType:   "string value"
-		FileType:      "string value"
-		FriendlyDesc1: "string value"
-		FriendlyDesc2: "string value"
-		Id:            "string value"
-		Name:          "string value"
-		Population:    "string value"
-		Sex:           "string value"
-    	```
+		- (void)handleFileSelected:(NSDictionary *)file {
+			NSLog(@"handleFileSelected: %@", file);
+		}
+		```
+		
 
 
 AppChains CocoaPod Plugin integration
