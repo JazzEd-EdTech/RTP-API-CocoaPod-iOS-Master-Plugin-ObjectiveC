@@ -16,6 +16,10 @@ To code Real-Time Personalization technology into apps, developers may [register
 * [Android (Maven plugin)](https://github.com/SequencingDOTcom/Maven-Android-Master-Plugin-Java)
 * [Java (Maven plugin)](https://github.com/SequencingDOTcom/Maven-Android-Master-Plugin-Java)
 
+**Sample project with installed and integrated Master plugin:**
+* [Objective-C sample project (installed Master plugin via CocoaPod)](https://github.com/SequencingDOTcom/iOS-Master-Plugin-Sample)
+* [Android sample project (installed Master plugin via Maven)](https://github.com/SequencingDOTcom/Android-Master-Plugin-Sample)
+
 
 Contents
 =========================================
@@ -129,7 +133,7 @@ If the authorization is valid, the API will send a JSON response containing the 
 OAuth CocoaPod Plugin integration
 ======================================
 
-* add Application Transport Security setting
+* **Add Application Transport Security setting**
 	* open project settings > Info tab
 	* add ```App Transport Security Settings``` row parameter (as Dictionary)
 	* add subrow to App Transport Security Settings parameter as ```Exception Domains``` dictionary parameter
@@ -140,9 +144,9 @@ OAuth CocoaPod Plugin integration
 	![sample files](https://github.com/SequencingDOTcom/CocoaPod-iOS-OAuth-ObjectiveC/blob/master/Screenshots/authTransportSecuritySetting.png)
 
 
-* create View Controllers, e.g. for Login screen and for Start screen
+* **Create View Controllers, e.g. for Login screen and for Start screen**
 	
-* in your LoginViewController class:
+* **In your LoginViewController class:**
 	
 	* add imports
 		```
@@ -260,7 +264,7 @@ OAuth CocoaPod Plugin integration
 		}
 		```
 		
-* in your StartViewController class:
+* **In your StartViewController class:**
 		
 	* add imports
 		```
@@ -312,7 +316,7 @@ OAuth CocoaPod Plugin integration
 File Selector CocoaPod Plugin integration
 ======================================
 
-* Set up file selector UI
+* **Set up file selector UI**
 
 	* add "Storyboard Reference" in your Main.storyboard
 		* select added Storyboard Reference
@@ -327,7 +331,7 @@ File Selector CocoaPod Plugin integration
 	* add ```TabbarFileSelector.storyboard``` file into your project Bundle Resources
 		* Build Phases > Copy Bundle Resources > add your ```TabbarFileSelector``` storyboard using the icon "+"
 
-* Subscribe for file selector protocol
+* **Subscribe for file selector protocol**
 
 	* add file selector protocol import in your class (e.g. StartViewController class) were you getting and handling file selector:
 		```
@@ -356,7 +360,7 @@ File Selector CocoaPod Plugin integration
 		}
 		```
 
-* Use file selector 
+* **Use file selector**
 
 	* set up some button for getting/viewing files for logged in user, and specify delegate method for this button
 	
@@ -401,7 +405,7 @@ File Selector CocoaPod Plugin integration
 		Sex | String |	the sex
 		
 
-* Examples 
+* **Examples**
 
 	* example of ```My Files```
 
