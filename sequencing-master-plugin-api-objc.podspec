@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.dependency "sequencing-oauth-api-objc", "~> 1.0.5"
-  s.dependency "sequencing-file-selector-api-objc", "~> 1.0.6"
+  s.dependency "sequencing-file-selector-api-objc", "~> 1.0.7"
   s.dependency "sequencing-app-chains-api-objc", "~> 1.0.0"
 
 end
