@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   :git => "https://github.com/SequencingDOTcom/CocoaPod-iOS-Master-Plugin-ObjectiveC.git", 
   :tag => "1.0.2" 
   }
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '8.0'
   # s.source_files = 'Pod', 'Pod/*.*'  
   s.requires_arc = true
   
