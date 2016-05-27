@@ -16,9 +16,10 @@ To code Real-Time Personalization technology into apps, developers may [register
 * [Android (Maven plugin)](https://github.com/SequencingDOTcom/Maven-Android-Master-Plugin-Java)
 * [Java (Maven plugin)](https://github.com/SequencingDOTcom/Maven-Android-Master-Plugin-Java)
 
-**Master Plugin - Plug-n-Play Demos (these repos can be cloned and added to your app to quickly integrate Real-Time Personalization into your app):**
-* [Objective-C (CocoaPod plugin) Plug-n-Play Demo](https://github.com/SequencingDOTcom/iOS-Master-Plugin-Plug-N-Play-Demo-Objective-C)
-* [Android sample project (installed Master plugin via Maven)](https://github.com/SequencingDOTcom/Android-Master-Plugin-Sample)
+**Master Plugin - Plug-n-Play Samples**
+**These sample repos can be used as an out-of-the-box solution to quickly integrating Real-Time Personalization into your app):**
+* [Objective-C (CocoaPod plugin) Plug-n-Play Demo](https://github.com/SequencingDOTcom/iOS-Objective-C-Master-Plugin-Plug-n-Play-Sample)
+* [Android sample project (installed Master plugin via Maven)](https://github.com/SequencingDOTcom/Android-Master-Plugin-Plug-N-Play-Sample)
 
 
 Contents
