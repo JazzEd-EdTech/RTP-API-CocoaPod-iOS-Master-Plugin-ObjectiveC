@@ -1,4 +1,4 @@
-# Master CocoaPod Plugin for adding Sequencing.com's Real-Time Personalization technology to iOS apps coded in Objective-C
+# Master CocoaPod Plugin for adding Sequencing.com's [Real-Time Personalization](https://sequencing.com/developer-documentation/what-is-real-time-personalization-rtp) technology to iOS apps coded in Objective-C
 =========================================
 This Master CocoaPod Plugin can be used to quickly add Real-Time Personalization to your app. This Master Plugin contains a customizable, end-to-end plug-n-play solution that quickly adds all necessary code (OAuth2, File Selector and App Chain coding) to your app.
 
